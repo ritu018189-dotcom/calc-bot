@@ -10,8 +10,8 @@ from telebot import types
 # CONFIGURATION SECTION
 # ------------------------------------------------------------------
 # আপনার টোকেনগুলো এখানে বসান
-BOT_TOKEN = 'YOUR_TELEGRAM_BOT_TOKEN_HERE'
-API_KEY = 'YOUR_EXCHANGERATE_API_KEY_HERE'
+BOT_TOKEN = '8522820530:AAHXmt7hTjSUNGFiH34tC7THAXk3a1E-mW8'
+API_KEY = 'ee27368c437300ef375dcbec'
 
 # লগিং সেটআপ (বট কি করছে তা দেখার জন্য)
 logging.basicConfig(
