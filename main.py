@@ -1339,14 +1339,24 @@ class YahooFinanceEngine:
     """
     
     def get_currency_rate(self, base, target):
-        """Fetch live currency exchange rate"""
+        """Fetch live currency exchange rate (Smart Ticker Search)"""
         try:
-            ticker = f"{base}{target}=X"
-            data = yf.Ticker(ticker).history(period="1d")
+            # 1. সাধারণ কারেন্সি চেষ্টা করা (যেমন: USDBDT=X)
+            ticker1 = f"{base}{target}=X"
+            data = yf.Ticker(ticker1).history(period="1d")
             
             if not data.empty:
                 return data['Close'].iloc[-1]
+
+            # 2. যদি ফেইল করে, তাহলে ক্রিপ্টো ফরম্যাট চেষ্টা করা (যেমন: BTC-USD)
+            ticker2 = f"{base}-{target}"
+            data2 = yf.Ticker(ticker2).history(period="1d")
+            
+            if not data2.empty:
+                return data2['Close'].iloc[-1]
+                
             return None
+
         except Exception as e:
             logger.error(f"Currency API Error: {e}")
             return None
