@@ -1,0 +1,8 @@
+{
+  "name": "Hungarian Forint",
+  "code": "HUF",
+  "symbol": "Ft",
+  "country": "Hungary",
+  "flag": "🇭🇺",
+  "type": "Fiat"
+}

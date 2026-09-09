@@ -1,0 +1,8 @@
+{
+  "name": "Singapore Dollar",
+  "code": "SGD",
+  "symbol": "$",
+  "country": "Singapore",
+  "flag": "🇸🇬",
+  "type": "Fiat"
+}

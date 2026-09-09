@@ -1,0 +1,8 @@
+{
+  "name": "Danish Krone",
+  "code": "DKK",
+  "symbol": "kr",
+  "country": "Denmark",
+  "flag": "🇩🇰",
+  "type": "Fiat"
+}

@@ -1,0 +1,8 @@
+{
+  "name": "CFA Franc BEAC",
+  "code": "XAF",
+  "symbol": "FCFA",
+  "country": "Cameroon",
+  "flag": "🇨🇲",
+  "type": "Fiat"
+}

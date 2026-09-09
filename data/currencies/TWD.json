@@ -1,0 +1,8 @@
+{
+  "name": "New Taiwan Dollar",
+  "code": "TWD",
+  "symbol": "NT$",
+  "country": "Taiwan",
+  "flag": "🇹🇼",
+  "type": "Fiat"
+}

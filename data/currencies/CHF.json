@@ -1,0 +1,8 @@
+{
+  "name": "Swiss Franc",
+  "code": "CHF",
+  "symbol": "Fr",
+  "country": "Switzerland",
+  "flag": "🇨🇭",
+  "type": "Fiat"
+}

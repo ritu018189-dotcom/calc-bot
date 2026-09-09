@@ -1,0 +1,8 @@
+{
+  "name": "Hong Kong Dollar",
+  "code": "HKD",
+  "symbol": "$",
+  "country": "Hong Kong",
+  "flag": "🇭🇰",
+  "type": "Fiat"
+}

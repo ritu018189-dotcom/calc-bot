@@ -1,0 +1,9 @@
+[tool.black]
+extend-exclude = "data/currencies"
+
+[tool.isort]
+profile = "black"
+skip = ["data/currencies", ".venv"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

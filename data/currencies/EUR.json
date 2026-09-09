@@ -1,0 +1,8 @@
+{
+  "name": "Euro",
+  "code": "EUR",
+  "symbol": "€",
+  "country": "European Union",
+  "flag": "🇪🇺",
+  "type": "Fiat"
+}

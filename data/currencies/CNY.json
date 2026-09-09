@@ -1,0 +1,8 @@
+{
+  "name": "Chinese Yuan",
+  "code": "CNY",
+  "symbol": "¥",
+  "country": "China",
+  "flag": "🇨🇳",
+  "type": "Fiat"
+}

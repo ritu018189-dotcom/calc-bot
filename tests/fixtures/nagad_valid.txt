@@ -1,0 +1,1 @@
+Money Received. Amount: Tk 500.00. Sender: 01712345678. TxnID: ABC123XYZ. Balance: Tk 1000.00. 10/10/2025 20:00

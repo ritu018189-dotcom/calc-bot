@@ -1,0 +1,8 @@
+{
+  "name": "Chilean Peso",
+  "code": "CLP",
+  "symbol": "$",
+  "country": "Chile",
+  "flag": "🇨🇱",
+  "type": "Fiat"
+}

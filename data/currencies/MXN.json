@@ -1,0 +1,8 @@
+{
+  "name": "Mexican Peso",
+  "code": "MXN",
+  "symbol": "$",
+  "country": "Mexico",
+  "flag": "🇲🇽",
+  "type": "Fiat"
+}

@@ -1,0 +1,8 @@
+{
+  "name": "Israeli New Sheqel",
+  "code": "ILS",
+  "symbol": "₪",
+  "country": "Israel",
+  "flag": "🇮🇱",
+  "type": "Fiat"
+}

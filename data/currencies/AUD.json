@@ -1,0 +1,8 @@
+{
+  "name": "Australian Dollar",
+  "code": "AUD",
+  "symbol": "$",
+  "country": "Australia",
+  "flag": "🇦🇺",
+  "type": "Fiat"
+}

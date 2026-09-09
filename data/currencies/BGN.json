@@ -1,0 +1,8 @@
+{
+  "name": "Bulgarian Lev",
+  "code": "BGN",
+  "symbol": "лв",
+  "country": "Bulgaria",
+  "flag": "🇧🇬",
+  "type": "Fiat"
+}

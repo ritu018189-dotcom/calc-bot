@@ -1,0 +1,16 @@
+[Unit]
+Description=calc-bot Telegram bot
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/calc-bot
+EnvironmentFile=/opt/calc-bot/.env
+ExecStart=/opt/calc-bot/.venv/bin/python /opt/calc-bot/main.py
+Restart=on-failure
+RestartSec=5
+User=calc-bot
+
+[Install]
+WantedBy=multi-user.target

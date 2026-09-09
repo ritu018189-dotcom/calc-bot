@@ -1,0 +1,8 @@
+{
+  "name": "British Pound Sterling",
+  "code": "GBP",
+  "symbol": "£",
+  "country": "United Kingdom",
+  "flag": "🇬🇧",
+  "type": "Fiat"
+}

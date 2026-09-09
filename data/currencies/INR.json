@@ -1,0 +1,8 @@
+{
+  "name": "Indian Rupee",
+  "code": "INR",
+  "symbol": "₹",
+  "country": "India",
+  "flag": "🇮🇳",
+  "type": "Fiat"
+}

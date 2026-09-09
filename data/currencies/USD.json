@@ -1,0 +1,8 @@
+{
+  "name": "United States Dollar",
+  "code": "USD",
+  "symbol": "$",
+  "country": "United States",
+  "flag": "🇺🇸",
+  "type": "Fiat"
+}

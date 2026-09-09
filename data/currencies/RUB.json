@@ -1,0 +1,8 @@
+{
+  "name": "Russian Ruble",
+  "code": "RUB",
+  "symbol": "₽",
+  "country": "Russia",
+  "flag": "🇷🇺",
+  "type": "Fiat"
+}

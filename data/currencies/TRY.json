@@ -1,0 +1,8 @@
+{
+  "name": "Turkish Lira",
+  "code": "TRY",
+  "symbol": "₺",
+  "country": "Turkey",
+  "flag": "🇹🇷",
+  "type": "Fiat"
+}

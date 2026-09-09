@@ -1,0 +1,8 @@
+{
+  "name": "Canadian Dollar",
+  "code": "CAD",
+  "symbol": "$",
+  "country": "Canada",
+  "flag": "🇨🇦",
+  "type": "Fiat"
+}
