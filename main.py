@@ -10,6 +10,7 @@ FEATURES:
 - 24/7 Uptime Server
 """
 
+import os
 import telebot
 import yfinance as yf
 import requests
@@ -27,8 +28,13 @@ from telebot import types
 # ⚙️ SYSTEM CONFIGURATION & SECURITY
 # ==============================================================================
 
-# ⚠️ আপনার টোকেন এখানে বসান
-BOT_TOKEN = '8522820530:AAHXmt7hTjSUNGFiH34tC7THAXk3a1E-mW8'
+# ⚠️ টোকেন এখন এনভায়রনমেন্ট ভ্যারিয়েবল থেকে আসবে, কোডে হার্ডকোড করা হয় না
+BOT_TOKEN = os.environ.get('BOT_TOKEN')
+if not BOT_TOKEN:
+    raise RuntimeError(
+        "BOT_TOKEN environment variable is not set. "
+        "Set it before starting the bot, e.g.: export BOT_TOKEN='your-token-here'"
+    )
 
 # লগিং লেভেল সেটআপ (এরর ধরার জন্য)
 logging.basicConfig(
@@ -1561,10 +1567,30 @@ def check_price(message):
 def world_time(message):
     try:
         location = message.text.replace('/time', '').strip()
-        # This is a basic implementation, can be expanded
-        bot.reply_to(message, f"🕒 Server Time: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
-    except:
-        pass
+        if not location:
+            bot.reply_to(message, "⚠️ Example: `/time London`")
+            return
+
+        query = location.lower().replace(' ', '_')
+        match = None
+        for tz_name in pytz.all_timezones:
+            city = tz_name.split('/')[-1].lower()
+            if city == query or query in city:
+                match = tz_name
+                break
+
+        if not match:
+            bot.reply_to(message, f"❌ Couldn't find a timezone for `{location}`.")
+            return
+
+        now = datetime.now(pytz.timezone(match))
+        bot.reply_to(
+            message,
+            f"🕒 **{location.title()}** ({match})\n{now.strftime('%Y-%m-%d %I:%M:%S %p')}"
+        )
+    except Exception as e:
+        logger.error(f"Time Error: {e}")
+        bot.reply_to(message, "❌ Error fetching world time.")
 
 # ==============================================================================
 # 🚀 INLINE QUERY HANDLER (Universal Search)
